@@ -11,7 +11,7 @@
   "compilerOptions": {
     "noEmit": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-
+    "incremental": true, // Enable incremental builds
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "types": ["node"]
