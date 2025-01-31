@@ -78,7 +78,7 @@
                         <button class="btn btn-primary btn-sm px-4 py-2 t">Get a quote</button>
                     </div>
                     <div class="col-lg-7">
-                        <div class="features-grid">
+                        <div class="features-grid ">
                             <div v-for="(item, index) in whyChooseUsOptions" :key="index" class="feature-item p-4">
                                 <div class="d-flex align-items-center gap-3">
                                     <div class="pe-5 border-end">
@@ -95,41 +95,44 @@
                 </div>
 
                 <div class="row pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
-                    <div class="col md-6">
-                        <div>
-                            <small class="text-uppercase d-inline-block mb-2">calculate delivery cost</small>
-                            <h2 class="fw-bold display-6 mb-4">Calculate delivery cost</h2>
-
-                            <div class="my-2">
-                              <select v-model="pickup" class="form-select">
-                                <option value="" disabled selected>Select Pickup Location</option>
-                                <option value="nairobi">Nairobi</option>
-                                <option value="mombasa">Mombasa</option>
-                                <option value="kisumu">Kisumu</option>
-                                <option value="nakuru">Nakuru</option>
-                                <option value="eldoret">Eldoret</option>
-                              </select>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <small class="text-uppercase d-inline-block mb-2">calculate delivery cost</small>
+                                <h2 class="fw-bold display-6 mb-4">Calculate delivery cost</h2>
+    
+                                <div class="my-2">
+                                  <select v-model="pickup" class="form-select">
+                                    <option value="" disabled selected>Select Pickup Location</option>
+                                    <option value="nairobi">Nairobi</option>
+                                    <option value="mombasa">Mombasa</option>
+                                    <option value="kisumu">Kisumu</option>
+                                    <option value="nakuru">Nakuru</option>
+                                    <option value="eldoret">Eldoret</option>
+                                  </select>
+                                </div>
+                                <div class="my-2">
+                                  <select v-model="destination" class="form-select">
+                                    <option value="" disabled selected>Select Destination</option>
+                                    <option value="nairobi">Nairobi</option>
+                                    <option value="mombasa">Mombasa</option>
+                                    <option value="kisumu">Kisumu</option>
+                                    <option value="nakuru">Nakuru</option>
+                                    <option value="eldoret">Eldoret</option>
+                                  </select>
+                                </div>
+                                <div class="mt-4">
+                                  <button @click="calculatePrice" class="btn btn-primary w-100">Calculate</button>
+                                </div>
+    
                             </div>
-                            <div class="my-2">
-                              <select v-model="destination" class="form-select">
-                                <option value="" disabled selected>Select Destination</option>
-                                <option value="nairobi">Nairobi</option>
-                                <option value="mombasa">Mombasa</option>
-                                <option value="kisumu">Kisumu</option>
-                                <option value="nakuru">Nakuru</option>
-                                <option value="eldoret">Eldoret</option>
-                              </select>
-                            </div>
-                            <div class="mt-4">
-                              <button @click="calculatePrice" class="btn btn-primary w-100">Calculate</button>
-                            </div>
-
                         </div>
-                    </div>
-                    <div class="col md-6">
-                        <div>
-                            <img src="https://media.istockphoto.com/id/1297286360/vector/kenya-communication-network-map-vector-low-poly-image-of-a-global-map-with-lights-in-the.jpg?s=612x612&w=is&k=20&c=Ra4iAaFZ95wdImxKhZVyXTaZnAUYhO8aypKYpuys5jg=" alt="">
+                        <div class="col md-6">
+                            <div class="mt-4" style="overflow: hidden;">
+                                <img src="https://media.istockphoto.com/id/1297286360/vector/kenya-communication-network-map-vector-low-poly-image-of-a-global-map-with-lights-in-the.jpg?s=612x612&w=is&k=20&c=Ra4iAaFZ95wdImxKhZVyXTaZnAUYhO8aypKYpuys5jg=" alt="" style="object-fit: cover;" width="100%" height="100%">
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -146,7 +149,7 @@
                 <TransitionGroup name="review-transition">
                   <div v-for="review in visibleReviews" :key="review.id" class="review-card col-md-6">
                     <div class="review-image">
-                      <img :src="review.image" :alt="review.name">
+                      <img :src="review.image" :alt="review.name" width="70" height="70" class="rounded-circle">
                     </div>
                     <h6 class="mt-3">~{{ review.name }}</h6>
                     <p class="text-muted mb-2">{{ review.role }}</p>
@@ -378,12 +381,6 @@
     }
   }
   
-//   .reviews-grid {
-//       display: grid;
-//       grid-template-columns: repeat(2, 1fr);
-//       gap: 2rem;
-//       margin-bottom: 1rem;
-//   }
   
   .review-card {
       text-align: center;
@@ -393,17 +390,17 @@
       box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   }
   
-  .review-image {
-      width: 80px;
-      height: 80px;
-      margin: 0 auto;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-  }
+//   .review-image {
+//       width: 80px;
+//       height: 80px;
+//       margin: 0 auto;
+//       img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         border-radius: 50%;
+//       }
+//   }
 
   @media (max-width: 768px) {
       .reviews-grid {
@@ -413,7 +410,7 @@
 
 .feature-item {
     border: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 1rem;
+    margin: 1rem 0;
     background: rgba(13, 110, 253, 0.02);
 }
 
