@@ -466,7 +466,7 @@
   transition: all 0.3s ease;
   
   &:hover:not(:disabled) {
-    background: #007bff;
+    background: orange;
     color: white;
   }
   
