@@ -1,47 +1,71 @@
 <template>
     <div class="m-0 p-0">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <i class="bi bi-box-seam fs-2 text-primary me-2"></i>
-            <span class="fw-bold">FastCourier</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                  <li><small class="text-uppercase"><a class="nav-link" href="#">home</a></small></li>
-                  <li><small class="text-uppercase"><a class="nav-link" href="#">services</a></small></li>
-                  <li><small class="text-uppercase"><a class="nav-link" href="#">about us</a></small></li>
-                  <li><small class="text-uppercase"><a class="nav-link" href="#">news</a></small></li>
-              </ul>
-              <div class="m">
-                  <button class="btn btn-sm btn-outline-primary">CONTACT US</button>
-              </div>
-          </div>
-        </div>
-      </nav>
+
   
       <div class="content-wrapper">
         <div class="hero-section">
-            <div class="hero-content section-wrp">
-                <h1 class="fw-bold display-4">Seamless Shipping, <br> Unmatched Care</h1>
-                <p class="card-text">Delivering Convenience with Every Shipment. Enjoy smooth logistics and outstanding customer service backed by our commitment to excellence.</p>
-                <button class="btn btn-sm btn-light px-4 py-2 text-primary">Get Started</button>
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover;">
+                        <div class="hero-content section-wrp">
+                            <h1 class="fw-bold display-4 text-white">Seamless Shipping, <br> Unmatched Care</h1>
+                            <p class="card-text text-white">Delivering Convenience with Every Shipment. Enjoy smooth logistics and outstanding customer service backed by our commitment to excellence.</p>
+                            <RouterLink to="/get-quote">
+                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Get a quote</button>
+                            </RouterLink>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover;">
+                        <div class="hero-content section-wrp">
+                            <h1 class="fw-bold display-4 text-white">Global Reach, <br> Local Touch</h1>
+                            <p class="card-text text-white">Connect with the world through our extensive network. Experience reliable shipping solutions that bridge distances effortlessly.</p>
+                            <RouterLink to="/get-quote">
+                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Start shipping</button>
+                            </RouterLink>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover;">
+                        <div class="hero-content section-wrp">
+                            <h1 class="fw-bold display-4 text-white">Fast, Secure, <br> Reliable</h1>
+                            <p class="card-text text-white">Your cargo's safety is our priority. Trust our experienced team to handle your shipments with the utmost care and precision.</p>
+                            <RouterLink to="/get-quote">
+                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Ship now</button>
+                            </RouterLink>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
         
         
         <!-- Services Section -->
-        <div style="padding-top: 700px;" class="section-wrp">
+        <div class="section-wrp mt-5">
             <small class="text-muted text-uppercase d-inline-block mb-2">our Services</small>
           <h2 class="fw-bold display-6 mb-4 text-muted">We provide timely and <br> cost-effective services</h2>
           <div class="row g-4">
             <div class="col-md-4">
               <div class="card h-100">
                 <div class="card-body">
-                    <h5 class="card-title">On-Time, Every Time</h5>
+                    <h5 class="card-title">On-time, every time</h5>
                     <p class="card-text text-muted">Our logistics solutions are tailored for reliability and efficiency, ensuring your shipments arrive punctually, every time.</p>
                 </div>
 
@@ -50,7 +74,7 @@
             <div class="col-md-4">
               <div class="card h-100">
                 <div class="card-body">
-                    <h5 class="card-title">Affordable & Efficient</h5>
+                    <h5 class="card-title">Affordable & efficient</h5>
                     <p class="card-text text-muted">We prioritize cost-effective solutions with competitive rates and transparent pricing, helping you streamline your logistics expenses.</p>
                 </div>
 
@@ -59,7 +83,7 @@
             <div class="col-md-4">
               <div class="card h-100">
                 <div class="card-body">
-                    <h5 class="card-title">Dependable Every Step</h5>
+                    <h5 class="card-title">Dependable every step</h5>
                     <p class="card-text text-muted">Trust us to handle your shipments with precision and care. With our unwavering commitment to reliability, your goods are always in safe hands.</p>
                 </div>
 
@@ -68,6 +92,48 @@
           </div>
         </div>
 
+
+        <div class="section-wrp">
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <img src="https://images.pexels.com/photos/7363197/pexels-photo-7363197.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" width="100%" height="100%" style="object-fit: cover;" class="rounded">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center gap-1">
+              <small class="text-uppercase">For all shippers</small>
+              <h2 class="fw-bold text-muted">Document and parcel shipping</h2>
+              <p>Send documents and parcels quickly and securely to any destination. Our efficient logistics network ensures timely deliveries with real-time tracking.</p>
+              <div>
+                <RouterLink to="/get-quote" class="text-decoration-none">
+                  <button class="btn btn-sm px-4 btn-dark d-flex align-items-center">
+                    Explore
+                    <i class="material-icons">chevron_right</i>
+                  </button>
+                </RouterLink>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5 pt-4">
+            <div class="col-md-6 d-flex flex-column justify-content-center gap-1">
+              <small class="text-uppercase">businesses only</small>
+              <h2 class="fw-bold text-muted">Enterprise Logistics Services</h2>
+              <p>Optimize your supply chain with our enterprise logistics solutions. We offer customized freight services, warehousing, and distribution for seamless business operations.</p>
+              <div>
+                <RouterLink to="/get-quote" class="text-decoration-none">
+                  <button class="btn btn-sm px-4 btn-dark d-flex align-items-center">
+                    Explore
+                    <i class="material-icons">chevron_right</i>
+                  </button>
+                </RouterLink>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img src="https://images.pexels.com/photos/4391486/pexels-photo-4391486.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="100%" height="100%" style="object-fit: cover;" class="rounded">
+            </div>
+          </div>
+        </div>
+
+
         <!-- why choose us -->
         <div class="why-choose-us my-5 text-light p-4" style="background-color: #0e1b24;">
             <div class="section-wrp">
@@ -75,7 +141,9 @@
                     <div class="col-lg-5">
                         <small class="text-uppercase d-inline-block mb-2">why choose us?</small>
                         <h2 class="fw-bold display-6 mb-4">We understand that every business has unique logistics needs</h2>
-                        <button class="btn btn-primary btn-sm px-4 py-2 t">Get a quote</button>
+                        <RouterLink to="/get-quote">
+                         <button class="btn fw-bold btn-primary btn-sm px-4 py-2 t">Get a quote</button>
+                      </RouterLink>
                     </div>
                     <div class="col-lg-7">
                         <div class="features-grid ">
@@ -94,47 +162,55 @@
                     </div>
                 </div>
 
-                <div class="row pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
+                <!-- <div class="row pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
                     <div class="row">
                         <div class="col-md-6">
                             <div>
                                 <small class="text-uppercase d-inline-block mb-2">calculate delivery cost</small>
                                 <h2 class="fw-bold display-6 mb-4">Calculate delivery cost</h2>
     
-                                <div class="my-2">
-                                  <select v-model="pickup" class="form-select">
-                                    <option value="" disabled selected>Select Pickup Location</option>
-                                    <option value="nairobi">Nairobi</option>
-                                    <option value="mombasa">Mombasa</option>
-                                    <option value="kisumu">Kisumu</option>
-                                    <option value="nakuru">Nakuru</option>
-                                    <option value="eldoret">Eldoret</option>
-                                  </select>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="">
+                                      <select v-model="pickup" class="form-select">
+                                        <option value="" disabled selected>Select Pickup Location</option>
+                                        <option value="nairobi">Nairobi</option>
+                                        <option value="mombasa">Mombasa</option>
+                                        <option value="kisumu">Kisumu</option>
+                                        <option value="nakuru">Nakuru</option>
+                                        <option value="eldoret">Eldoret</option>
+                                      </select>
+                                    </div>
+
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="">
+                                      <select v-model="destination" class="form-select">
+                                        <option value="" disabled selected>Select Destination</option>
+                                        <option value="nairobi">Nairobi</option>
+                                        <option value="mombasa">Mombasa</option>
+                                        <option value="kisumu">Kisumu</option>
+                                        <option value="nakuru">Nakuru</option>
+                                        <option value="eldoret">Eldoret</option>
+                                      </select>
+                                    </div>
+                                  </div>
                                 </div>
-                                <div class="my-2">
-                                  <select v-model="destination" class="form-select">
-                                    <option value="" disabled selected>Select Destination</option>
-                                    <option value="nairobi">Nairobi</option>
-                                    <option value="mombasa">Mombasa</option>
-                                    <option value="kisumu">Kisumu</option>
-                                    <option value="nakuru">Nakuru</option>
-                                    <option value="eldoret">Eldoret</option>
-                                  </select>
-                                </div>
+
                                 <div class="mt-4">
-                                  <button @click="calculatePrice" class="btn btn-primary w-100">Calculate</button>
+                                  <button class="btn btn-primary w-100">Calculate</button>
                                 </div>
     
                             </div>
                         </div>
-                        <div class="col md-6">
+                        <div class="col md-12">
                             <div class="mt-4" style="overflow: hidden;">
-                                <img src="https://media.istockphoto.com/id/1297286360/vector/kenya-communication-network-map-vector-low-poly-image-of-a-global-map-with-lights-in-the.jpg?s=612x612&w=is&k=20&c=Ra4iAaFZ95wdImxKhZVyXTaZnAUYhO8aypKYpuys5jg=" alt="" style="object-fit: cover;" width="100%" height="100%">
+                                <img src="/public/kenya.jpg" alt="" style="object-fit: cover;" width="100%" height="100%">
                             </div>
                         </div>
 
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         
@@ -149,7 +225,7 @@
                 <TransitionGroup name="review-transition">
                   <div v-for="review in visibleReviews" :key="review.id" class="review-card col-md-6">
                     <div class="review-image">
-                      <img :src="review.image" :alt="review.name" width="70" height="70" class="rounded-circle">
+                      <img :src="review.image" :alt="review.name" width="70" height="70" class="rounded-circle" style="object-fit: cover;">
                     </div>
                     <h6 class="mt-3">~{{ review.name }}</h6>
                     <p class="text-muted mb-2">{{ review.role }}</p>
@@ -172,37 +248,7 @@
           </div>
         </div>
   
-        <!-- Footer -->
-        <footer class="bg-dark text-light py-5 mt-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <h5>Contact Us</h5>
-                <p>Email: info@courier.com<br>
-                   Phone: +254 700 000 000</p>
-              </div>
-              <div class="col-md-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="text-light">About Us</a></li>
-                  <li><a href="#" class="text-light">Services</a></li>
-                  <li><a href="#" class="text-light">Track Package</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <h5>Follow Us</h5>
-                <div class="fs-4">
-                  <i class="bi bi-facebook me-3"></i>
-                  <i class="bi bi-twitter me-3"></i>
-                  <i class="bi bi-instagram"></i>
-                </div>
-              </div>
-            </div>
-            <div class="text-center mt-3">
-              <small>&copy; 2025 Courier Services. All rights reserved.</small>
-            </div>
-          </div>
-        </footer>
+
       </div>
     </div>
   </template>
@@ -213,12 +259,6 @@
   const pickup = ref('')
   const destination = ref('')
   const price = ref(null)
-  const calculatePrice = () => {
-    if (pickup.value && destination.value) {
-      // Generate a random price between 1000 and 5000
-      price.value = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
-    }
-  }
 
   const whyChooseUsOptions = ref([
     {
@@ -244,14 +284,14 @@
       id: 1,
       name: 'John Doe',
       role: 'Business Owner',
-      image: 'https://randomuser.me/api/portraits/men/32.jpg',
+      image: 'https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww',
       comment: 'FastCourier has been instrumental in growing my business. Their reliability and speed have allowed me to meet deadlines effortlessly, and I can always count on them for a seamless delivery experience.'
     },
     {
       id: 2,
       name: 'Sarah Smith',
       role: 'Online Seller',
-      image: 'https://randomuser.me/api/portraits/women/44.jpg',
+      image: 'https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJhbmRvbSUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D',
       comment: 'Their prices are competitive and their service exceptional! I’ve tried multiple courier services, but none match the efficiency and attention to detail that FastCourier provides. They truly stand out in the industry.'
     },
     {
@@ -333,43 +373,34 @@
   }
 
 .hero-section {
-    position: absolute;
-    left: 0;
-  width: 100vw;
-  height: 600px;
-  background-image: url('https://images.unsplash.com/photo-1578575437130-527eed3abbec');
-  background-size: cover;
-  background-position: center;
-  /* position: relative; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-
-  &::before{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-
-  }
+    position: relative;
+    margin-top: -56px; /* Adjust based on your navbar height */
 }
 
+.carousel-item {
+    height: 70vh;
+    min-height: 600px;
+    background-position: center;
+    background-size: cover;
+}
 
 .hero-content {
-  position: relative;
-  z-index: 2;
-  text-align: left;
-  padding: 0 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
 }
 
+.carousel-indicators {
+    margin-bottom: 3rem;
+}
 
-  
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
   .card {
     padding: 10px;
     border: unset !important;
