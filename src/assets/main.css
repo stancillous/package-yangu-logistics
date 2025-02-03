@@ -1,35 +1,44 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+
+button{
+  border-radius: 1px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+button:hover{
+  opacity: .8;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+
+.btn-outline-secondary{
+  border-color: orange !important;
+}
+.btn-secondary{
+  background-color: orange !important;
+  border-color: orange !important;
+  color: black !important;
+}
+.btn-outline-primary{
+  border-color: orange !important;
+  color: black;
+}
+.btn-primary{
+  background-color: orange !important;
+  border-color: orange !important;
+  color: black !important;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.text-orange{
+  color: orange !important;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.form-label, label{
+  font-size: 13px !important;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+input{
+  font-size: 14px !important;
+  padding: 10px !important;
+  margin-right: 10px !important;
 }
