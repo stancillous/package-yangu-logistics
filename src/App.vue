@@ -9,6 +9,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="/">
             <img src="/public/logo1.png" alt="" width="160px" style="object-fit: contain;">
+            <i class="fa fa-phone">+254 758 163 164</i>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -16,12 +17,14 @@ import { RouterLink, RouterView } from 'vue-router'
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                   <li><small class=""><a class="nav-link" href="/">Home</a></small></li>
-                  <li><small class=""><a class="nav-link" href="#">Services</a></small></li>
                   <li><small class=""><a class="nav-link" href="#">About us</a></small></li>
-                  <li><small class=""><a class="nav-link" href="#">News</a></small></li>
+                  <li><small class=""><a class="nav-link" href="#">Services</a></small></li>
+                  <li><small class=""><a class="nav-link" href="#">Contact Us</a></small></li>
               </ul>
               <div class="m">
-                  <button class="btn btn-sm btn-primary">Contact us</button>
+                <RouterLink to="/get-quote">
+                  <button class="btn btn-sm btn-primary">Send a Package Now!</button>
+                </RouterLink>   
               </div>
           </div>
         </div>
@@ -37,8 +40,8 @@ import { RouterLink, RouterView } from 'vue-router'
             <div class="row">
               <div class="col-md-4">
                 <h5>Contact Us</h5>
-                <p>Email: info@courier.com<br>
-                   Phone: +254 700 000 000</p>
+                <p>Email: packageyangu.logistics@gmail.com<br>
+                   Phone: +254 758 163 164</p>
               </div>
               <div class="col-md-4">
                 <h5>Quick Links</h5>

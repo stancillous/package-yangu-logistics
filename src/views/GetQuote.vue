@@ -8,7 +8,7 @@
     <div class="container py-5">
       <div class="text-center mb-4">
         <!-- <h2 class="fw-bold display-6 mb-4 text-muted">Complete your shipment in 3 easy steps</h2> -->
-        <h5 class="fw-bold text-muted">Complete your shipment in 3 easy steps</h5>
+        <h5 class="fw-bold text-muted">Get your package delivered in 3 easy steps</h5>
       </div>
 
       <!-- Progress Steps -->

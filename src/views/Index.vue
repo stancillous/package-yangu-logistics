@@ -14,10 +14,10 @@
                     <!-- Slide 1 -->
                     <div class="carousel-item active" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover;">
                         <div class="hero-content section-wrp">
-                            <h1 class="fw-bold display-4 text-white">Seamless Shipping, <br> Unmatched Care</h1>
+                            <h1 class="fw-bold display-4 text-white">Seamless Package Delivery, <br> Unmatched Care</h1>
                             <p class="card-text text-white">Delivering Convenience with Every Shipment. Enjoy smooth logistics and outstanding customer service backed by our commitment to excellence.</p>
                             <RouterLink to="/get-quote">
-                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Get a quote</button>
+                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Send Package Now!</button>
                             </RouterLink>
                         </div>
                     </div>
@@ -28,7 +28,7 @@
                             <h1 class="fw-bold display-4 text-white">Global Reach, <br> Local Touch</h1>
                             <p class="card-text text-white">Connect with the world through our extensive network. Experience reliable shipping solutions that bridge distances effortlessly.</p>
                             <RouterLink to="/get-quote">
-                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Start shipping</button>
+                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Send Package Now!</button>
                             </RouterLink>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                             <h1 class="fw-bold display-4 text-white">Fast, Secure, <br> Reliable</h1>
                             <p class="card-text text-white">Your cargo's safety is our priority. Trust our experienced team to handle your shipments with the utmost care and precision.</p>
                             <RouterLink to="/get-quote">
-                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Ship now</button>
+                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Send Package Now!</button>
                             </RouterLink>
                         </div>
                     </div>
