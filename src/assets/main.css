@@ -42,3 +42,13 @@ input{
   padding: 10px !important;
   margin-right: 10px !important;
 }
+.form-control{
+  font-size: 14px !important;
+  padding: 10px !important;
+  margin-right: 10px !important;
+  resize: none;
+}
+.text-orange{
+  color: orange !important;
+  opacity: .8;
+}
