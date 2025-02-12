@@ -5,11 +5,21 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <div>
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+      <div class="contact border-bottom py-2 d-flex align-items-center gap-5 justify-content-center">
+        <div class="d-flex align-items-center gap-1">
+          <i class="material-icons m-0 text-orange fs-6">phone</i>
+          <small class="m-0">+254 758 163 164</small>
+        </div>
+        <div class="d-flex align-items-center gap-1">
+          <i class="material-icons m-0 text-orange fs-6">email</i>
+          <small class="m-0">packageyangu.logistics@gmail.com</small>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="/">
-            <img src="/public/logo1.png" alt="" width="160px" style="object-fit: contain;">
-            <i class="fa fa-phone">+254 758 163 164</i>
+          <a class="navbar-brand d-flex align-items-center " href="/">
+            <img src="/public/logo1.png" alt="" width="160x" height="80px" style="object-fit: contain;">
+            
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -19,18 +29,18 @@ import { RouterLink, RouterView } from 'vue-router'
                   <li><small class=""><a class="nav-link" href="/">Home</a></small></li>
                   <li><small class=""><a class="nav-link" href="#">About us</a></small></li>
                   <li><small class=""><a class="nav-link" href="#">Services</a></small></li>
-                  <li><small class=""><a class="nav-link" href="#">Contact Us</a></small></li>
+                  <li><small class=""><a class="nav-link" href="#">Contact us</a></small></li>
               </ul>
               <div class="m">
                 <RouterLink to="/get-quote">
-                  <button class="btn btn-sm btn-primary">Send a Package Now!</button>
+                  <button class="btn btn-sm btn-primary">Send a package</button>
                 </RouterLink>   
               </div>
           </div>
         </div>
       </nav>
     </div>
-    <div class="mt-5 pt-4">
+    <div class="pt-1">
       <RouterView></RouterView>
     </div>
 
