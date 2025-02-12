@@ -409,12 +409,12 @@ const filteredShippingTypes = computed(() => {
 const handleShippingTypeChange = () => {
   const selectedType = shippingTypes.value.find(type => type.id === shippingDetails.value.package.type);
   if (selectedType) {
-    selectedShippingTypeDetails.value = selectedType;
+    shippingDetails.value.package.type = selectedType.name;
   }
 };
 
 // Watch for changes in selectedShippingType and auto-update details
-watch(shippingDetails.value.package.type, (newValue) => {
+watch(shippingDetails.value.package, (newValue) => {
   handleShippingTypeChange();
 });
 
@@ -447,8 +447,9 @@ function whatsappCheckout() {
   let whatsappLink = "https://wa.me/+254795494587?text=" + encodedMessage;
 
   // Update the button link if it exists
-  const orderOnWhatsappBtn = document.getElementById("chat-on-whatsapp-btn");
+  const orderOnWhatsappBtn = document.getElementById("chat-on-whatsapp-btn") as HTMLAnchorElement;
   if (orderOnWhatsappBtn) {
+    // orderOnWhatsappBtn.setAttribute('href', whatsappLink)
     orderOnWhatsappBtn.href = whatsappLink;
   } else {
     alert("Order on WhatsApp element not found.");
