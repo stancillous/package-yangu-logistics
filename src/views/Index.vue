@@ -17,7 +17,7 @@
                             <h1 class="fw-bold display-4 text-white">Seamless Package Delivery, <br> Unmatched Care</h1>
                             <p class="card-text text-white">Delivering Convenience with Every Shipment. Enjoy smooth logistics and outstanding customer service backed by our commitment to excellence.</p>
                             <RouterLink to="/get-quote">
-                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Send Package Now!</button>
+                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Send a package</button>
                             </RouterLink>
                         </div>
                     </div>
@@ -28,7 +28,7 @@
                             <h1 class="fw-bold display-4 text-white">Global Reach, <br> Local Touch</h1>
                             <p class="card-text text-white">Connect with the world through our extensive network. Experience reliable shipping solutions that bridge distances effortlessly.</p>
                             <RouterLink to="/get-quote">
-                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Send Package Now!</button>
+                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Send a package</button>
                             </RouterLink>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                             <h1 class="fw-bold display-4 text-white">Fast, Secure, <br> Reliable</h1>
                             <p class="card-text text-white">Your cargo's safety is our priority. Trust our experienced team to handle your shipments with the utmost care and precision.</p>
                             <RouterLink to="/get-quote">
-                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Send Package Now!</button>
+                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Send a package</button>
                             </RouterLink>
                         </div>
                     </div>
@@ -56,6 +56,9 @@
             </div>
         </div>
         
+        <div>
+          <GetQuote/>
+        </div>
         
         <!-- Services Section -->
         <div class="section-wrp mt-5">
@@ -253,9 +256,9 @@
     </div>
   </template>
   
-  <script setup>
+  <script setup lang="ts">
   import { ref, computed } from 'vue';
-
+  import GetQuote from '@/components/GetQuote.vue';
   const pickup = ref('')
   const destination = ref('')
   const price = ref(null)
@@ -374,12 +377,12 @@
 
 .hero-section {
     position: relative;
-    margin-top: -56px; /* Adjust based on your navbar height */
+    // margin-top: 11px; /* Adjust based on your navbar height */
 }
 
 .carousel-item {
-    height: 70vh;
-    min-height: 600px;
+    height: 40vh;
+    // min-height: 500px;
     background-position: center;
     background-size: cover;
 }
