@@ -374,10 +374,10 @@ const filteredShippingTypes = computed(() => {
   // Navigation functions
   const nextStep = () => {
     
-    // if (checkStepCompletion()) {
-    //   alert("Please fill all the required fields")
-    //   return
-    // } 
+    if (checkStepCompletion()) {
+      alert("Please fill all the required fields")
+      return
+    } 
 
     if (currentStep.value < 4) {
       currentStep.value++
