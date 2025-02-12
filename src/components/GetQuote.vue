@@ -444,7 +444,7 @@ function whatsappCheckout() {
   // console.log(message)
   // Encode message for WhatsApp URL
   let encodedMessage = encodeURIComponent(message);
-  let whatsappLink = "https://wa.me/+254795494587?text=" + encodedMessage;
+  let whatsappLink = "https://wa.me/+254758163164?text=" + encodedMessage;
 
   // Update the button link if it exists
   const orderOnWhatsappBtn = document.getElementById("chat-on-whatsapp-btn") as HTMLAnchorElement;
