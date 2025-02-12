@@ -21,9 +21,9 @@
           </div>
         </div>
     
-        <div class="row g-5">
+        <div class="row g-lg-5 g-md-5 g-sm-0">
           <div class="col-md-5">
-            <div class="h-100">
+            <div class="h-100 step-image-container">
               <img :src="currentStepImage" :alt="`Step ${currentStep} shipping process`" width="100%" height="100%" style=" object-fit: cover;" class="rounded">
             </div>
           </div>
@@ -374,10 +374,10 @@ const filteredShippingTypes = computed(() => {
   // Navigation functions
   const nextStep = () => {
     
-    if (checkStepCompletion()) {
-      alert("Please fill all the required fields")
-      return
-    } 
+    // if (checkStepCompletion()) {
+    //   alert("Please fill all the required fields")
+    //   return
+    // } 
 
     if (currentStep.value < 4) {
       currentStep.value++
@@ -423,13 +423,13 @@ function whatsappCheckout() {
 
   let message = "🚚 *New Shipping Request*\n\n";
   message += `👤 *Customer Type*: ${details.customer.type || "N/A"}\n`;
-  message += `📱 *Mobile*: ${details.customer.name} - ${details.customer.mobile}\n\n`;
+  message += `📱 *Customer Details*: ${details.customer.name} - ${details.customer.mobile}\n\n`;
 
   message += `📍 *Pickup Location*:\n`;
   message += `   - *City*: ${details.pickup.city || "N/A"}\n`;
   message += `   - *ZIP Code*: ${details.pickup.zip || "N/A"}\n\n`;
 
-  message += `📦 *Destination*:\n`;
+  message += `📍 *Destination*:\n`;
   message += `   - *City*: ${details.destination.city || "N/A"}\n`;
   message += `   - *ZIP Code*: ${details.destination.zip || "N/A"}\n\n`;
 
@@ -437,14 +437,14 @@ function whatsappCheckout() {
   message += `   - *Type*: ${details.package.type || "N/A"}\n`;
   message += `   - *Weight*: ${details.package.weight ? details.package.weight + " kg" : "N/A"}\n\n`;
 
-  message += `💰 *Estimated Price*: ${details.price} KSh\n\n`;
+  message += `*Estimated Price*: ${details.price} KSh\n\n`;
 
   // message += "Thank you for choosing our service! We look forward to assisting you. 🚛";
 
   // console.log(message)
   // Encode message for WhatsApp URL
   let encodedMessage = encodeURIComponent(message);
-  let whatsappLink = "https://wa.me/+254795494587?text=" + encodedMessage;
+  let whatsappLink = "https://wa.me/+254758163164?text=" + encodedMessage;
 
   // Update the button link if it exists
   const orderOnWhatsappBtn = document.getElementById("chat-on-whatsapp-btn") as HTMLAnchorElement;
@@ -691,5 +691,11 @@ function whatsappCheckout() {
       font-size: 0.9rem;
       text-align: center;
       color: #333;
+  }
+
+  @media screen and (max-width:700px) {
+    .step-image-container{
+      display: none;
+    }
   }
   </style>
