@@ -288,14 +288,14 @@
       name: 'John Doe',
       role: 'Business Owner',
       image: 'https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww',
-      comment: 'FastCourier has been instrumental in growing my business. Their reliability and speed have allowed me to meet deadlines effortlessly, and I can always count on them for a seamless delivery experience.'
+      comment: 'PackageYangu Logistics has been instrumental in growing my business. Their reliability and speed have allowed me to meet deadlines effortlessly, and I can always count on them for a seamless delivery experience.'
     },
     {
       id: 2,
       name: 'Sarah Smith',
       role: 'Online Seller',
       image: 'https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJhbmRvbSUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D',
-      comment: 'Their prices are competitive and their service exceptional! I’ve tried multiple courier services, but none match the efficiency and attention to detail that FastCourier provides. They truly stand out in the industry.'
+      comment: 'Their prices are competitive and their service exceptional! I’ve tried multiple courier services, but none match the efficiency and attention to detail that PackageYangu Logistics provides. They truly stand out in the industry.'
     },
     {
       id: 3,
@@ -309,35 +309,35 @@
       name: 'Emma Wilson',
       role: 'E-commerce Owner',
       image: 'https://randomuser.me/api/portraits/women/33.jpg',
-      comment: 'Reliable and professional service every time! As an e-commerce owner, I need a courier that I can depend on to handle my shipments with the utmost care. FastCourier exceeds my expectations with every delivery.'
+      comment: 'Reliable and professional service every time! As an e-commerce owner, I need a courier that I can depend on to handle my shipments with the utmost care. PackageYangu Logistics exceeds my expectations with every delivery.'
     },
     {
       id: 5,
       name: 'James Lee',
       role: 'Freelancer',
       image: 'https://randomuser.me/api/portraits/men/14.jpg',
-      comment: 'I’ve been using FastCourier for all my freelance shipments, and I couldn’t be happier. They’re quick, reliable, and always keep me updated on the status of my packages.'
+      comment: 'I’ve been using PackageYangu Logistics for all my freelance shipments, and I couldn’t be happier. They’re quick, reliable, and always keep me updated on the status of my packages.'
     },
     {
       id: 6,
       name: 'Olivia Brown',
       role: 'Retailer',
       image: 'https://randomuser.me/api/portraits/women/22.jpg',
-      comment: 'FastCourier is my go-to service for all my retail deliveries. They are consistently fast and their customer service team is always helpful when I have questions about my shipments.'
+      comment: 'PackageYangu Logistics is my go-to service for all my retail deliveries. They are consistently fast and their customer service team is always helpful when I have questions about my shipments.'
     },
     {
       id: 7,
       name: 'David Miller',
       role: 'Corporate Client',
       image: 'https://randomuser.me/api/portraits/men/59.jpg',
-      comment: 'We’ve been partnering with FastCourier for years, and their service continues to impress. They handle our high-volume shipments with efficiency and care, and always meet our deadlines.'
+      comment: 'We’ve been partnering with PackageYangu Logistics for years, and their service continues to impress. They handle our high-volume shipments with efficiency and care, and always meet our deadlines.'
     },
     {
       id: 8,
       name: 'Sophia Martinez',
       role: 'Startup Founder',
       image: 'https://randomuser.me/api/portraits/women/56.jpg',
-      comment: 'As a startup founder, reliable logistics are crucial, and FastCourier has never let us down. They’re cost-effective, dependable, and truly understand the unique needs of small businesses.'
+      comment: 'As a startup founder, reliable logistics are crucial, and PackageYangu Logistics has never let us down. They’re cost-effective, dependable, and truly understand the unique needs of small businesses.'
     }
 ])
 
