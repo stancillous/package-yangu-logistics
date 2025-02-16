@@ -37,6 +37,12 @@ button:hover{
   font-size: 13px !important;
 }
 
+.form-select {
+  font-size: 13px !important;
+}
+.form-select option {
+  font-size: 13px !important;
+}
 input{
   font-size: 14px !important;
   padding: 10px !important;
