@@ -13,33 +13,33 @@
                 <div class="carousel-inner">
                     <!-- Slide 1 -->
                     <div class="carousel-item active" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover;">
-                        <div class="hero-content section-wrp">
+                        <div class="hero-content container section-wrp">
                             <h1 class="fw-bold display-4 text-white">Seamless Package Delivery, <br> Unmatched Care</h1>
                             <p class="card-text text-white">Delivering Convenience with Every Shipment. Enjoy smooth logistics and outstanding customer service backed by our commitment to excellence.</p>
                             <RouterLink to="/get-quote">
-                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Send a package</button>
+                                <button class="btn btn-sm btn-secondary px-4 py-2 text-primary">Send a package</button>
                             </RouterLink>
                         </div>
                     </div>
 
                     <!-- Slide 2 -->
                     <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover;">
-                        <div class="hero-content section-wrp">
+                        <div class="hero-content container section-wrp">
                             <h1 class="fw-bold display-4 text-white">Global Reach, <br> Local Touch</h1>
                             <p class="card-text text-white">Connect with the world through our extensive network. Experience reliable shipping solutions that bridge distances effortlessly.</p>
                             <RouterLink to="/get-quote">
-                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Send a package</button>
+                                <button class="btn btn-sm btn-secondary px-4 py-2 text-primary">Send a package</button>
                             </RouterLink>
                         </div>
                     </div>
 
                     <!-- Slide 3 -->
                     <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover;">
-                        <div class="hero-content section-wrp">
+                        <div class="hero-content container section-wrp">
                             <h1 class="fw-bold display-4 text-white">Fast, Secure, <br> Reliable</h1>
                             <p class="card-text text-white">Your cargo's safety is our priority. Trust our experienced team to handle your shipments with the utmost care and precision.</p>
                             <RouterLink to="/get-quote">
-                                <button class="btn btn-sm btn-secondary fw-bold px-4 py-2 text-primary">Send a package</button>
+                                <button class="btn btn-sm btn-secondary px-4 py-2 text-primary">Send a package</button>
                             </RouterLink>
                         </div>
                     </div>
@@ -56,96 +56,20 @@
             </div>
         </div>
         
-        <div>
+        <div class="py-5">
           <GetQuote/>
         </div>
-        
-        <!-- Services Section -->
-        <div class="section-wrp mt-5">
-            <small class="text-muted text-uppercase d-inline-block mb-2">our Services</small>
-          <h2 class="fw-bold display-6 mb-4 text-muted">We provide timely and <br> cost-effective services</h2>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">On-time, every time</h5>
-                    <p class="card-text text-muted">Our logistics solutions are tailored for reliability and efficiency, ensuring your shipments arrive punctually, every time.</p>
-                </div>
-
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">Affordable & efficient</h5>
-                    <p class="card-text text-muted">We prioritize cost-effective solutions with competitive rates and transparent pricing, helping you streamline your logistics expenses.</p>
-                </div>
-
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">Dependable every step</h5>
-                    <p class="card-text text-muted">Trust us to handle your shipments with precision and care. With our unwavering commitment to reliability, your goods are always in safe hands.</p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="section-wrp">
-          <div class="row mt-4">
-            <div class="col-md-6">
-              <img src="https://images.pexels.com/photos/7363197/pexels-photo-7363197.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" width="100%" height="100%" style="object-fit: cover;" class="rounded">
-            </div>
-            <div class="col-md-6 d-flex flex-column justify-content-center gap-1">
-              <small class="text-uppercase">For all shippers</small>
-              <h2 class="fw-bold text-muted">Document and parcel shipping</h2>
-              <p>Send documents and parcels quickly and securely to any destination. Our efficient logistics network ensures timely deliveries with real-time tracking.</p>
-              <div>
-                <RouterLink to="/get-quote" class="text-decoration-none">
-                  <button class="btn btn-sm px-4 btn-dark d-flex align-items-center">
-                    Explore
-                    <i class="material-icons">chevron_right</i>
-                  </button>
-                </RouterLink>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mt-5 pt-4">
-            <div class="col-md-6 d-flex flex-column justify-content-center gap-1">
-              <small class="text-uppercase">businesses only</small>
-              <h2 class="fw-bold text-muted">Enterprise Logistics Services</h2>
-              <p>Optimize your supply chain with our enterprise logistics solutions. We offer customized freight services, warehousing, and distribution for seamless business operations.</p>
-              <div>
-                <RouterLink to="/get-quote" class="text-decoration-none">
-                  <button class="btn btn-sm px-4 btn-dark d-flex align-items-center">
-                    Explore
-                    <i class="material-icons">chevron_right</i>
-                  </button>
-                </RouterLink>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <img src="https://images.pexels.com/photos/4391486/pexels-photo-4391486.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="100%" height="100%" style="object-fit: cover;" class="rounded">
-            </div>
-          </div>
-        </div>
-
+    
 
         <!-- why choose us -->
         <div class="why-choose-us my-5 text-light p-4" style="background-color: #0e1b24;">
-            <div class="section-wrp">
+            <div class="container section-wrp">
                 <div class="row mb-4">
                     <div class="col-lg-5">
                         <small class="text-uppercase d-inline-block mb-2">why choose us?</small>
                         <h2 class="fw-bold display-6 mb-4">We understand that every business has unique logistics needs</h2>
                         <RouterLink to="/get-quote">
-                         <button class="btn fw-bold btn-primary btn-sm px-4 py-2 t">Get a quote</button>
+                         <button class="btn btn-primary btn-sm px-4 py-2 t">Get a quote</button>
                       </RouterLink>
                     </div>
                     <div class="col-lg-7">
@@ -219,7 +143,7 @@
         
         <!-- Reviews Section -->
         <div class="reviews-section my-5 py-5">
-          <div class="section-wrp">
+          <div class="container">
             <small class="text-muted text-uppercase d-inline-block mb-2">testimonials</small>
             <h2 class="fw-bold display-6 mb-5">What our customers say</h2>
             
@@ -362,16 +286,10 @@
   
   <style scoped lang="scss">
 
-.container {
-      width: 100vw;
-      max-width: 1500px;
-      margin: auto;
-  }
-
   .section-wrp{
-    max-width: 1000px;
-    width: 100vw;
-    margin: 1rem auto;
+    // max-width: 1000px;
+    // width: 100vw;
+    // margin: 1rem auto;
     padding: 10px;
   }
 
