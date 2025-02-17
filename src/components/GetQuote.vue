@@ -63,7 +63,9 @@
                               <label for="" class="form-label" id="from-region">City</label>
                               <select name="" id="from-region" v-model="shippingDetails.pickup.city" class="form-select">
                                 <option value="" disabled selected>Select city</option>
-                                <option v-for="(value, key) in places[shippingDetails.pickup.region]" :value="key">{{ key }}</option>
+                                <option
+                                v-for="(value, key) in places[shippingDetails.pickup.region]"
+                                :value="key">{{ key }}</option>
                               </select>
                             </div>
                             <div class="my-2">
@@ -71,7 +73,9 @@
                                 <label for="" class="form-label" id="from-region">Constituent</label>
                                 <select name="" id="from-region" v-model="shippingDetails.pickup.constituent" class="form-select">
                                   <option value="" disabled selected>Select constituent</option>
-                                  <option v-for="(value, key) in places[shippingDetails.pickup.region][shippingDetails.pickup.city]" :value="key">{{ key }}</option>
+                                  <option
+                                  v-for="(value, key) in places[shippingDetails.pickup.region]?.[shippingDetails.pickup.city]"
+                                  :value="key">{{ key }}</option>
                                 </select>
                               </template>
                             </div>
@@ -100,7 +104,9 @@
                                 <label for="" class="form-label" id="from-region">constituent</label>
                                 <select name="" id="from-region" v-model="shippingDetails.destination.constituent" class="form-select">
                                   <option value="" disabled selected>Select constituent</option>
-                                  <option v-for="(value, key) in places[shippingDetails.destination.region][shippingDetails.destination.city]" :value="key">{{ key }}</option>
+                                  <option 
+                                  v-for="(value, key) in places[shippingDetails.destination.region]?.[shippingDetails.destination.city]"
+                                  :value="key">{{ key }}</option>
                                 </select>
                               </template>
                             </div>
@@ -524,7 +530,7 @@ function whatsappCheckout() {
 
 
 
-  const places = ref({
+  const places = ref<{ [key: string]: any }>({
     nairobi: {
   "CBD": {
     "University Way/ Uhuru Highway": 150,
