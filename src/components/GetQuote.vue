@@ -1,6 +1,6 @@
 <template>
     <div class="py-1">
-      <div class="container py-5">
+      <div class="container">
         <div class="text-center mb-4">
           <!-- <h2 class="fw-bold display-6 mb-4 text-muted">Complete your shipment in 3 easy steps</h2> -->
           <h5 class="fw-bold text-muted">Get your package delivered in {{ steps.length }} easy steps</h5>
@@ -21,7 +21,8 @@
           </div>
         </div>
     
-        <div class="row g-lg-5 g-md-5 g-sm-0">
+        <!-- <div class="row g-lg-5 g-md-5 g-sm-0"> -->
+        <div class="row g-0">
           <div class="col-md-5">
             <div class="h-100 step-image-container">
               <img :src="currentStepImage" :alt="`Step ${currentStep} shipping process`" width="100%" height="100%" style=" object-fit: cover;" class="rounded">
@@ -67,7 +68,7 @@
                             </div>
                             <div class="my-2">
                               <template v-if="shippingDetails.pickup.region && shippingDetails.pickup.city">
-                                <label for="" class="form-label" id="from-region">Consituent</label>
+                                <label for="" class="form-label" id="from-region">Constituent</label>
                                 <select name="" id="from-region" v-model="shippingDetails.pickup.constituent" class="form-select">
                                   <option value="" disabled selected>Select constituent</option>
                                   <option v-for="(value, key) in places[shippingDetails.pickup.region][shippingDetails.pickup.city]" :value="key">{{ key }}</option>
@@ -96,7 +97,7 @@
                             </div>
                             <div class="my-2">
                               <template v-if="shippingDetails.destination.region && shippingDetails.destination.city">
-                                <label for="" class="form-label" id="from-region">Consituent</label>
+                                <label for="" class="form-label" id="from-region">constituent</label>
                                 <select name="" id="from-region" v-model="shippingDetails.destination.constituent" class="form-select">
                                   <option value="" disabled selected>Select constituent</option>
                                   <option v-for="(value, key) in places[shippingDetails.destination.region][shippingDetails.destination.city]" :value="key">{{ key }}</option>
@@ -248,7 +249,7 @@
                       <hr>
                       <div class="d-flex justify-content-between">
                         <strong>Total cost</strong>
-                        <strong>Ksh {{ places[shippingDetails.destination.region]?.[shippingDetails.destination.city]?.[shippingDetails.destination.constituent] }}</strong>
+                        <strong>Ksh {{ places[shippingDetails.destination.region]?.[shippingDetails.destination.city]?.[shippingDetails.destination.constituent] }}.00</strong>
                       </div>
                     </div>
                   </div>
@@ -286,7 +287,7 @@
                             ></path>
                           </g>
                         </svg>
-                        <span>checkout on Whatsapp</span>
+                        <span>checkout on WhatsApp</span>
                       </div>
                     </a>
                   </div>
@@ -322,6 +323,11 @@
   
   <script setup lang="ts">
   import { ref, computed, watch } from 'vue'
+  import {useToast} from 'vue-toast-notification';
+  import 'vue-toast-notification/dist/theme-sugar.css';
+
+  const toast = useToast();
+  
 
   const steps = [ 'Delivery address', 'Package details', 'Your details', 'Final order summary']
   const currentStep = ref(1)
@@ -340,7 +346,7 @@
     destination: {
       region: '',
       city: '',
-      consituent: '',
+      constituent: '',
     },
     package: {
       type: '',
@@ -427,12 +433,13 @@ const filteredShippingTypes = computed(() => {
     type.name.toLowerCase().includes(searchQuery.value.toLowerCase())
   );
 });
-  
+
+
   // Navigation functions
   const nextStep = () => {
     
     if (checkStepCompletion()) {
-      alert("Please fill all the required fields")
+      toast.warning("Please fill all the required fields", { position: 'top-right', duration: 3000, dismissible: true, queue: true})
       return
     } 
 
@@ -628,15 +635,19 @@ function whatsappCheckout() {
   </script>
   
   <style scoped lang="scss">
+
+
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
   .card{
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
   }
-  // .container{
-  //   max-width: 900px;
-  // }
-  
+
   p{
     font-weight: 500;
     font-size: 15px;
@@ -828,8 +839,10 @@ function whatsappCheckout() {
 
 //order on whatsapp btn
 .order-onw-wrp {
+  cursor: pointer;
   a {
     width: 100%;
+    text-decoration: none;
 
     div {
       border-radius: 1px;
@@ -838,10 +851,9 @@ function whatsappCheckout() {
       display: flex;
       justify-content: center;
       align-items: center;
-      // border: 2px solid blue;
-      // font-size: 1.3rem;
       font-weight: 400;
       text-transform: capitalize;
+      font-size: 14px;
       color: white;
       svg {
         color: white;
@@ -849,19 +861,9 @@ function whatsappCheckout() {
         stroke: white;
         height:17px;
         width: 17px;
-        margin-right: 1rem;
+        margin-right: 7px;
       }
     }
-    img {
-      width: 100%;
-      height: 4rem;
-      object-fit: contain;
-    }
-  }
-  img {
-    width: 100%;
-    height: 4rem;
-    object-fit: contain;
   }
 }
   @media screen and (max-width:700px) {
