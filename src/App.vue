@@ -26,10 +26,10 @@ import { RouterLink, RouterView } from 'vue-router'
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
-                  <li><small class=""><a class="nav-link" href="/">Home</a></small></li>
-                  <li><small class=""><a class="nav-link" href="#">About us</a></small></li>
-                  <li><small class=""><a class="nav-link" href="#">Services</a></small></li>
-                  <li><small class=""><a class="nav-link" href="#">Contact us</a></small></li>
+                  <li><small class=""><router-link class="nav-link" :to="{name: 'home'}">Home</router-link></small></li>
+                  <li><small class=""><router-link class="nav-link" :to="{name: 'about'}">About us</router-link></small></li>
+                  <li><small class=""><router-link class="nav-link" :to="{name: 'services'}">Services</router-link></small></li>
+                  <li><small class=""><router-link class="nav-link" to="/">Contact us</router-link></small></li>
               </ul>
               <div class="m">
                 <RouterLink to="/get-quote">
@@ -49,20 +49,22 @@ import { RouterLink, RouterView } from 'vue-router'
           <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h5>Contact Us</h5>
-                <p>Email: packageyangu.logistics@gmail.com<br>
-                   Phone: +254 758 163 164</p>
+                <h5>Contact us</h5>
+                <p>Email: packageyangu.logistics@gmail.com</p>
+                <p>Phone: +254 758 163 164</p>
+                <p>Address: Garden Estate, Garden Court, D18A
+                  Kanyagia Drive, Off Marurui Rd</p>
               </div>
               <div class="col-md-4">
-                <h5>Quick Links</h5>
+                <h5>Quick links</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#" class="text-light">About Us</a></li>
-                  <li><a href="#" class="text-light">Services</a></li>
-                  <li><a href="#" class="text-light">Track Package</a></li>
+                  <li><router-link class="text-decoration-none text-light" :to="{name: 'about'}">About us</router-link></li>
+                  <li><router-link class="text-decoration-none text-light" :to="{name: 'services'}">Services</router-link></li>
+                  <li><router-link class="text-decoration-none text-light" to="/">Track package</router-link></li>
                 </ul>
               </div>
               <div class="col-md-4">
-                <h5>Follow Us</h5>
+                <h5>Follow us</h5>
                 <div class="fs-4">
                   <i class="bi bi-facebook me-3"></i>
                   <i class="bi bi-twitter me-3"></i>
