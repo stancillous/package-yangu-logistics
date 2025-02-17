@@ -12,6 +12,16 @@ const router = createRouter({
       // component: App,
     },
     {
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/About.vue'),
+    },
+    {
+      path: '/about',
+      name: 'services',
+      component: () => import('../views/Services.vue'),
+    },
+    {
       path: '/get-quote',
       name: 'get-quote',
       component: () => import('../views/GetQuote.vue'),
