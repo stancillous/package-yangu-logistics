@@ -1,5 +1,9 @@
 @import './base.css';
 
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
 
 button{
   border-radius: 1px !important;
