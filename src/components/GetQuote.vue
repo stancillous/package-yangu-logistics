@@ -53,16 +53,16 @@
                           <h6 class="">Pick-up address</h6>
                           <div class="row">
                             <div class="my-2">
-                              <label for="" class="form-label" id="from-region">Region</label>
+                              <label for="" class="form-label" id="from-region">County</label>
                               <select name="" id="from-region" v-model="shippingDetails.pickup.region" class="form-select">
-                                <option value="" disabled selected>Select region</option>
+                                <option value="" disabled selected>Select county</option>
                                 <option v-for="(value, key) in places" :value="key">{{ key }}</option>
                               </select>
                             </div>
                             <div class="my-2">
-                              <label for="" class="form-label" id="from-region">City</label>
+                              <label for="" class="form-label" id="from-region">Location</label>
                               <select name="" id="from-region" v-model="shippingDetails.pickup.city" class="form-select">
-                                <option value="" disabled selected>Select city</option>
+                                <option value="" disabled selected>Select location</option>
                                 <option
                                 v-for="(value, key) in places[shippingDetails.pickup.region]"
                                 :value="key">{{ key }}</option>
@@ -70,9 +70,9 @@
                             </div>
                             <div class="my-2">
                               <template v-if="shippingDetails.pickup.region && shippingDetails.pickup.city">
-                                <label for="" class="form-label" id="from-region">Constituent</label>
+                                <label for="" class="form-label" id="from-region">Area</label>
                                 <select name="" id="from-region" v-model="shippingDetails.pickup.constituent" class="form-select">
-                                  <option value="" disabled selected>Select constituent</option>
+                                  <option value="" disabled selected>Select area</option>
                                   <option
                                   v-for="(value, key) in places[shippingDetails.pickup.region]?.[shippingDetails.pickup.city]"
                                   :value="key">{{ key }}</option>
@@ -86,24 +86,24 @@
                           <h6 class="">Delivery address</h6>
                           <div class="row">
                             <div class="my-2">
-                              <label for="" class="form-label" id="from-region">Region</label>
+                              <label for="" class="form-label" id="from-region">County</label>
                               <select name="" id="from-region" v-model="shippingDetails.destination.region" class="form-select">
-                                <option value="" disabled selected>Select region</option>
+                                <option value="" disabled selected>Select county</option>
                                 <option v-for="(value, key) in places" :value="key">{{ key }}</option>
                               </select>
                             </div>
                             <div class="my-2">
-                              <label for="" class="form-label" id="from-region">City</label>
+                              <label for="" class="form-label" id="from-region">Location</label>
                               <select name="" id="from-region" v-model="shippingDetails.destination.city" class="form-select">
-                                <option value="" disabled selected>Select city</option>
+                                <option value="" disabled selected>Select location</option>
                                 <option v-for="(value, key) in places[shippingDetails.destination.region]" :value="key">{{ key }}</option>
                               </select>
                             </div>
                             <div class="my-2">
                               <template v-if="shippingDetails.destination.region && shippingDetails.destination.city">
-                                <label for="" class="form-label" id="from-region">constituent</label>
+                                <label for="" class="form-label" id="from-region">Area</label>
                                 <select name="" id="from-region" v-model="shippingDetails.destination.constituent" class="form-select">
-                                  <option value="" disabled selected>Select constituent</option>
+                                  <option value="" disabled selected>Select area</option>
                                   <option 
                                   v-for="(value, key) in places[shippingDetails.destination.region]?.[shippingDetails.destination.city]"
                                   :value="key">{{ key }}</option>
@@ -365,10 +365,10 @@
   
   // Step images
   const stepImages = {
-    1: "https://images.pexels.com/photos/2449454/pexels-photo-2449454.jpeg?auto=compress&cs=tinysrgb&w=400",
-    2: "https://images.pexels.com/photos/3856433/pexels-photo-3856433.jpeg?auto=compress&cs=tinysrgb&w=400", 
-    3: "https://images.pexels.com/photos/4484149/pexels-photo-4484149.jpeg?auto=compress&cs=tinysrgb&w=400",
-    4: "https://images.pexels.com/photos/6169033/pexels-photo-6169033.jpeg?auto=compress&cs=tinysrgb&w=400"
+    1: "/public/images/WhatsApp Image 2025-02-18 at 21.48.50.jpeg",
+    2: "/public/images/WhatsApp Image 2025-02-18 at 21.48.51 (1).jpeg", 
+    3: "/public/images/WhatsApp Image 2025-02-18 at 21.48.52.jpeg",
+    4: "/public/images/WhatsApp Image 2025-02-18 at 21.48.52 (2).jpeg"
   }
   
   
@@ -531,7 +531,7 @@ function whatsappCheckout() {
 
 
   const places = ref<{ [key: string]: any }>({
-    nairobi: {
+    Nairobi: {
   "CBD": {
     "University Way/ Uhuru Highway": 150,
     "Kirinyaga Rd/ Haile Selassie": 150,
@@ -622,7 +622,7 @@ function whatsappCheckout() {
     "Nyayo Estate gate D": 550
   }
     },
-    kiambu: {
+    Kiambu: {
       "THIKA ROAD": {
     "Ngara": 250,
     "Pangani": 300,
