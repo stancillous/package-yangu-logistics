@@ -365,10 +365,10 @@
   
   // Step images
   const stepImages = {
-    1: "../public/images/WhatsApp Image 2025-02-18 at 21.48.50.jpeg",
-    2: "../public/images/WhatsApp Image 2025-02-18 at 21.48.51 (1).jpeg", 
-    3: "../public/images/WhatsApp Image 2025-02-18 at 21.48.52.jpeg",
-    4: "../public/images/WhatsApp Image 2025-02-18 at 21.48.52 (2).jpeg"
+    1: "public/images/WhatsApp Image 2025-02-18 at 21.48.50.jpeg",
+    2: "public/images/WhatsApp Image 2025-02-18 at 21.48.51 (1).jpeg", 
+    3: "public/images/WhatsApp Image 2025-02-18 at 21.48.52.jpeg",
+    4: "public/images/WhatsApp Image 2025-02-18 at 21.48.52 (2).jpeg"
   }
   
   
