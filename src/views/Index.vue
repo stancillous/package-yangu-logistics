@@ -12,7 +12,7 @@
                 </div>
                 <div class="carousel-inner">
                     <!-- Slide 1 -->
-                    <div class="carousel-item active" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../public/images/WhatsApp Image 2025-02-18 at 21.48.52.jpeg') center/cover;">
+                    <div class="carousel-item active" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover;">
                         <div class="hero-content container section-wrp">
                             <h1 class="fw-bold display-4 text-white">Seamless Package Delivery, <br> Unmatched Care</h1>
                             <p class="card-text text-white">Delivering Convenience with Every Shipment. Enjoy smooth logistics and outstanding customer service backed by our commitment to excellence.</p>

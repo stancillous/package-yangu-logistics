@@ -365,10 +365,10 @@
   
   // Step images
   const stepImages = {
-    1: "src/assets/images/WhatsApp Image 2025-02-18 at 21.48.50.jpeg",
-    2: "public/images/WhatsApp Image 2025-02-18 at 21.48.51 (1).jpeg", 
-    3: "public/images/WhatsApp Image 2025-02-18 at 21.48.52.jpeg",
-    4: "public/images/WhatsApp Image 2025-02-18 at 21.48.52 (2).jpeg"
+    1: "https://images.pexels.com/photos/2449454/pexels-photo-2449454.jpeg?auto=compress&cs=tinysrgb&w=400",
+    2: "https://images.pexels.com/photos/3856433/pexels-photo-3856433.jpeg?auto=compress&cs=tinysrgb&w=400", 
+    3: "https://images.pexels.com/photos/4484149/pexels-photo-4484149.jpeg?auto=compress&cs=tinysrgb&w=400",
+    4: "https://images.pexels.com/photos/6169033/pexels-photo-6169033.jpeg?auto=compress&cs=tinysrgb&w=400"
   }
   
   
