@@ -23,7 +23,7 @@
                     </div>
 
                     <!-- Slide 2 -->
-                    <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover;">
+                    <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Peter_Ndirangu_African_rider_doing_parcel_delivery_for_a_company_8a327841-5c6e-47a6-9e81-ffe1c479a7ca.png') center/cover;">
                         <div class="hero-content container section-wrp">
                             <h1 class="fw-bold display-4 text-white">Global Reach, <br> Local Touch</h1>
                             <p class="card-text text-white">Connect with the world through our extensive network. Experience reliable shipping solutions that bridge distances effortlessly.</p>
