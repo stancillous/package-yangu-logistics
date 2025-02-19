@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="" style="max-width: 10600px; margin: auto;">
-            <img src="https://cdn.prod.website-files.com/65636268c62f3d0464956d0b/656780079843f7bfe6cf4574_pexels-tom-fisk-3057960%201.jpg" alt="" width="100%" height="350" style="object-fit: cover;">
+            <img src="/WhatsApp Image 2025-02-18 at 21.48.49 (1).jpeg" alt="" width="100%" height="350" style="object-fit: cover;">
         </div>
         <div class="container">
                     <!-- Services Section -->
@@ -43,7 +43,7 @@
         <div class="section-wrp">
           <div class="row mt-4">
             <div class="col-md-6">
-              <img src="https://images.pexels.com/photos/7363197/pexels-photo-7363197.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" width="100%" height="100%" style="object-fit: cover;" class="rounded">
+              <img src="/Peter_Ndirangu_African_rider_doing_parcel_delivery_for_a_company_8a327841-5c6e-47a6-9e81-ffe1c479a7ca.png" alt="" width="100%" height="75%" style="object-fit: cover;" class="rounded">
             </div>
             <div class="col-md-6 d-flex flex-column justify-content-center gap-1">
               <small class="text-uppercase">For all shippers</small>
@@ -75,7 +75,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <img src="https://images.pexels.com/photos/4391486/pexels-photo-4391486.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="100%" height="100%" style="object-fit: cover;" class="rounded">
+              <img src="/WhatsApp Image 2025-02-18 at 21.48.49 (2).jpeg" alt="" width="100%" height="75%" style="object-fit: cover;" class="rounded">
             </div>
           </div>
         </div>
