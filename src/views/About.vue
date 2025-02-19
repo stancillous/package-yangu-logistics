@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="" style="max-width: 10600px; margin: auto;">
-            <img src="https://cdn.prod.website-files.com/65636268c62f3d0464956d0b/656780079843f7bfe6cf4574_pexels-tom-fisk-3057960%201.jpg" alt="" width="100%" height="350" style="object-fit: cover;">
+            <img src="/WhatsApp Image 2025-02-18 at 21.48.49 (1).jpeg" alt="" width="100%" height="350" style="object-fit: cover;">
         </div>
         <div class="container">
             <div class="row py-5 my-5">
