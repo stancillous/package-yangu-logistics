@@ -36,13 +36,13 @@
                     <span class="fi fi-ke fs-5"></span>
                   </div>
   
-                    <h5 class="mb-3">Delivery for...</h5>
+                    <h5 class="mb-3">I am shipping as...</h5>
                     <ul class="nav nav-pills" id="pills-tab" role="tablist">
                       <li @click="shippingDetails.customer.type = 'personal'" class="nav-item" role="presentation">
-                          <button @click="shippingDetails.customer.type = 'personal'" class="nav-link btn-sm active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Personal</button>
+                          <button @click="shippingDetails.customer.type = 'personal'" class="nav-link btn-sm active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">An Individual</button>
                       </li>
                       <li @click="shippingDetails.customer.type = 'business'" class="nav-item" role="presentation">
-                          <button @click="shippingDetails.customer.type = 'business'" class="nav-link btn-sm btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Business</button>
+                          <button @click="shippingDetails.customer.type = 'business'" class="nav-link btn-sm btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> A Business</button>
                       </li>
                     </ul>
         
