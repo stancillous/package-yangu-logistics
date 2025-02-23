@@ -36,7 +36,7 @@
                     <span class="fi fi-ke fs-5"></span>
                   </div>
   
-                    <h5 class="mb-3">I am shipping as a...</h5>
+                    <h5 class="mb-3">Delivery for...</h5>
                     <ul class="nav nav-pills" id="pills-tab" role="tablist">
                       <li @click="shippingDetails.customer.type = 'personal'" class="nav-item" role="presentation">
                           <button @click="shippingDetails.customer.type = 'personal'" class="nav-link btn-sm active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Personal</button>
